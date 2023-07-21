@@ -18,9 +18,4 @@ export class CriarPensamentoComponent {
   criarPensamento() {
     alert('novo pensamento: ' + this.pensamento.conteudo)
   }
-
-  cancelar() {
-
-  }
-
 }
