@@ -10,6 +10,7 @@
 
 # production
 /build
+.angular/cache
 
 # misc
 .DS_Store
