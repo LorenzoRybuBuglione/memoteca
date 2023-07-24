@@ -7,15 +7,15 @@ import { Component } from "@angular/core";
 })
 export class ListarPensamentoComponent {
   listaPensamentos = [
-    {
-      conteudo: "Eu amo Angular",
-      autoria: "Dev",
-      modelo: "modelo3",
-    },
-    {
-      conteudo: "Teste Dois",
-      autoria: "Uau",
-      modelo: "modelo2",
-    },
+    // {
+    //   conteudo: "Eu amo Angular",
+    //   autoria: "Dev",
+    //   modelo: "modelo3",
+    // },
+    // {
+    //   conteudo: "Teste Dois",
+    //   autoria: "Uau",
+    //   modelo: "modelo2",
+    // },
   ];
 }
