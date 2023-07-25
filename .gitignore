@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+/backend/node_modules
 
 # testing
 /coverage
@@ -11,8 +12,6 @@
 # production
 /build
 .angular/cache
-
-.backend/node_modules
 
 # misc
 .DS_Store
