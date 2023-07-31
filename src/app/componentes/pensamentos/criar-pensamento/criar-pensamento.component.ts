@@ -1,4 +1,3 @@
-
 import { Component } from "@angular/core";
 import { PensamentoService } from "../pensamento.service";
 import { Router } from "@angular/router";
@@ -32,6 +31,7 @@ export class CriarPensamentoComponent {
         Validators.compose([Validators.required, Validators.minLength(3)]),
       ],
       modelo: ["modelo1"],
+      favorito: [false],
     });
   }
 
