@@ -1,4 +1,4 @@
-import { PensamentoService } from './../pensamento.service';
+import { PensamentoService } from "./../pensamento.service";
 import { Pensamento } from "../pensamento";
 import { Component, Input } from "@angular/core";
 
@@ -15,6 +15,8 @@ export class PensamentoComponent {
     modelo: "",
     favorito: false,
   };
+
+  @Input() listaFavoritos: Pensamento[] = [];
 
   constructor(private service: PensamentoService) {}
 
@@ -34,6 +36,13 @@ export class PensamentoComponent {
   }
 
   atualizarFavoritos() {
-    this.service.mudarFavorito( this.pensamento ).subscribe();
+    this.service
+      .mudarFavorito(this.pensamento)
+      .subscribe(() =>
+        this.listaFavoritos.splice(
+          this.listaFavoritos.indexOf(this.pensamento),
+          1
+        )
+      );
   }
 }
